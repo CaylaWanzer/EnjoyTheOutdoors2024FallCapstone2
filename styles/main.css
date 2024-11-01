@@ -1,0 +1,14 @@
+body{
+    background-color: skyblue;
+    color: rgb(65, 73, 52);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a{
+    display: inline-block;
+    background-color: saddlebrown;
+    color: goldenrod;
+    margin: 0.5px;
+    padding: 0.5rem;
+    text-decoration: none;
+}
