@@ -6,14 +6,27 @@
     <title>Parks</title>
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/main.js"></script>
+    <script src="./data/scripts/nationalParkData.js"></script>
+    <script src="./data/scripts/parkTypeData.js"></script>
+    <script src="./data/scripts/locationData.js"></script>
+    <script src="./scripts/parks_page.js"></script>
 </head>
 <body>
     <nav>
-        <a href="index.html">HOME</a><a href="mountains.html">MOUNTAINS</a><a href="parks.html" class="selected">PARKS</a>
+        <a href="index.html">HOME</a><a href="./mountains.html">MOUNTAINS</a><a href="./parks.html" class="selected">PARKS</a>
     </nav>
     <main>
-        
         <h1>Parks</h1>
+        <div class="filters">
+            <select name="parkTypeSelect" id="parkTypeSelect">
+                <option value="">Select a park type...</option>
+            </select>
+            <select name="parkLocationSelect" id="parkLocationSelect">
+                <option value="">Select a park Location</option>
+            </select>
+            <button id="filterButton">Filter</button>
+        </div>
+        <div id="results"></div>
     </main>
     <footer>
         Copyright 2024 &copy;
